@@ -1,10 +1,10 @@
-# combo-problem #1
+# combo-problem #3
 
 Given the following function call:
-- combo_problem1(2);
+- combo_problem3(2);
 
 And the resulting output:
-- [0,3,0,0,6,0,0,9,0,0,12];
+- [4, 6, -9, -12, 16, 20, -25, -30];
 
 Create a function definition that achieves the output with the given input. 
 
