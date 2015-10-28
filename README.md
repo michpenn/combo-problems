@@ -1,7 +1,7 @@
-# combo-problem #1
+# combo-problem #2
 
 Given the following function call:
-- combo_problem1(2);
+- combo_problem2(2);
 
 And the resulting output:
 - [0,3,0,0,6,0,0,9,0,0,12];
