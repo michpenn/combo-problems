@@ -8,6 +8,6 @@ And the resulting output:
 
 Create a function definition that achieves the output with the given input. 
 
-<a href="http://jsbin.com/jifawu/edit?html,js,output" target="_blank">Solution Set</a>
+<a href="http://jsbin.com/kaqona/edit?html,js,output" target="_blank">Solution Set</a>
 
 
