@@ -2,6 +2,10 @@
  * Created by michpenn on 10/28/15.
  */
 
+/**
+ * Problem 1
+ * @param number
+ */
 function combo_problem1(number) {
     var numberArray = [];
     var rejectNumbers = [];
@@ -27,3 +31,24 @@ function combo_problem1(number) {
 }
 
 combo_problem1(2);
+
+/**
+ * Combo Problem 2
+ * @param number
+ */
+function combo_problem2(number) {
+    var array = [];
+
+    for (i = number; i < 13; i++) {
+        if ((i%3)==0) {
+            array.push(i);
+        }
+        else {
+            array.push(0);
+        }
+    }
+    console.log(array);
+}
+
+combo_problem2(2);
+
