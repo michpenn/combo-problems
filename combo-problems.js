@@ -8,16 +8,21 @@ function combo_problem1(number) {
     for (var i = number; i <= 12; i++) {
         numberArray.push(i);
     }
-    console.log(numberArray);
     var indexThis;
-    for (var j = 0; j<numberArray.length; j++) {
-        indexThis=(j+1);
-        if ([indexThis]%3 == 0) {
+    for (var j = 0; j < numberArray.length; j++) {
+        indexThis = (j + 1);
+        if ([indexThis] % 3 == 0) {
             rejectNumbers.push(numberArray[j]);
-            //numberArray.splice(j,1);
         }
     }
-    console.log(rejectNumbers);
+
+    for (var k = 0; k < numberArray.length; k++) {
+        for (var l = 0; l < rejectNumbers.length; l++) {
+            if (numberArray[k] == rejectNumbers[l]) {
+                numberArray.splice(k, 1);
+            }
+        }
+    }
     console.log(numberArray);
 }
 
