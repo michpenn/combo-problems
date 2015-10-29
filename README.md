@@ -1,9 +1,13 @@
-# combo-problems
-These problems are meant to use a variety of constructs to reach the end goal, including
+# combo-problem #1
 
-- Arrays
-- Functions
-- Loops
-- Assignments
+Given the following function call:
+- combo_problem1(2);
 
-Each problem is in its own branch.  Solutions are posted in a jsbin link 1 day after, on average.
+And the resulting output:
+- [2,3,5,6,8,9,11,12];
+
+Create a function definition that achieves the output with the given input. 
+
+<a href="http://jsbin.com/vacogo/edit?html,js,output" target="_blank">Solution Set</a>
+
+
