@@ -39,8 +39,8 @@ combo_problem1(2);
 function combo_problem2(number) {
     var array = [];
 
-    for (i = number; i < 13; i++) {
-        if ((i%3)==0) {
+    for (var i = number; i < 13; i++) {
+        if ((i % 3) == 0) {
             array.push(i);
         }
         else {
@@ -51,4 +51,51 @@ function combo_problem2(number) {
 }
 
 combo_problem2(2);
+
+function combo_problem3(number) {
+    var array_3 = [];
+    var value1;
+    var value2;
+    var value3;
+    var ispositive=true;
+    var typeof3;
+
+    for (var i = number; i <5;) {
+        for (var j = number; j <6;) {
+            value1 = i;
+            value2 = j;
+            typeof3 = typeof value3;
+
+
+            if((typeof3=='number' || typeof3=='undefined') && ispositive==true) {
+            array_3.push(i*j);
+                console.log('1. undefined and true');
+            }
+
+            else {
+                array_3.push(-1*(i*j));
+                console.log('else');
+            }
+            value3 = (array_3.length -1);
+            j++;
+
+            if((typeof3=='number' || typeof3=='undefined') && ispositive==true) {
+                array_3.push(i*j);
+                console.log('2. number or undefined and true');
+                ispositive=false;
+            }
+            else {
+                array_3.push(-1*(i*j));
+                console.log('else');
+                ispositive=true;
+            }
+
+            value3 = (array_3.length -1);
+            i++;
+        }
+    }
+    console.log(array_3);
+}
+
+combo_problem3(2);
 
