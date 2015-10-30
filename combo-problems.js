@@ -135,3 +135,21 @@ console.log(output_array4);
 
 combo_problem4(2, 5);
 
+
+/**
+ * Problem 5
+ * @param number
+ */
+function combo_problem5(number) {
+    var array5=[];
+
+    for (var i=2; i<11; i++) {
+        array5.push(number*i);
+    }
+    for (var j=2.75; j<5; j+=(0.25)) {
+        array5.push(number*j);
+    }
+    console.log(array5);
+}
+
+combo_problem5(2);
