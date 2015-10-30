@@ -52,45 +52,49 @@ function combo_problem2(number) {
 
 combo_problem2(2);
 
+/**
+ * Problem 3
+ * @param number
+ */
 function combo_problem3(number) {
     var array_3 = [];
     var value1;
     var value2;
     var value3;
-    var ispositive=true;
+    var ispositive = true;
     var typeof3;
 
-    for (var i = number; i <5;) {
-        for (var j = number; j <6;) {
+    for (var i = number; i < 5;) {
+        for (var j = number; j < 6;) {
             value1 = i;
             value2 = j;
             typeof3 = typeof value3;
 
 
-            if((typeof3=='number' || typeof3=='undefined') && ispositive==true) {
-            array_3.push(i*j);
+            if ((typeof3 == 'number' || typeof3 == 'undefined') && ispositive == true) {
+                array_3.push(i * j);
                 console.log('1. undefined and true');
             }
 
             else {
-                array_3.push(-1*(i*j));
+                array_3.push(-1 * (i * j));
                 console.log('else');
             }
-            value3 = (array_3.length -1);
+            value3 = (array_3.length - 1);
             j++;
 
-            if((typeof3=='number' || typeof3=='undefined') && ispositive==true) {
-                array_3.push(i*j);
+            if ((typeof3 == 'number' || typeof3 == 'undefined') && ispositive == true) {
+                array_3.push(i * j);
                 console.log('2. number or undefined and true');
-                ispositive=false;
+                ispositive = false;
             }
             else {
-                array_3.push(-1*(i*j));
+                array_3.push(-1 * (i * j));
                 console.log('else');
-                ispositive=true;
+                ispositive = true;
             }
 
-            value3 = (array_3.length -1);
+            value3 = (array_3.length - 1);
             i++;
         }
     }
