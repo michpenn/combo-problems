@@ -73,24 +73,20 @@ function combo_problem3(number) {
 
             if ((typeof3 == 'number' || typeof3 == 'undefined') && ispositive == true) {
                 array_3.push(i * j);
-                console.log('1. undefined and true');
             }
 
             else {
                 array_3.push(-1 * (i * j));
-                console.log('else');
             }
             value3 = (array_3.length - 1);
             j++;
 
             if ((typeof3 == 'number' || typeof3 == 'undefined') && ispositive == true) {
                 array_3.push(i * j);
-                console.log('2. number or undefined and true');
                 ispositive = false;
             }
             else {
                 array_3.push(-1 * (i * j));
-                console.log('else');
                 ispositive = true;
             }
 
@@ -102,4 +98,40 @@ function combo_problem3(number) {
 }
 
 combo_problem3(2);
+
+/**
+ * Problem 4
+ * @param num1
+ * @param num2
+ */
+function combo_problem4(num1, num2) {
+    var output_array4 = [];
+    var operator;
+    var total;
+
+for (var i = 0; i < 4; i++) {
+    switch (i) {
+        case 0:
+            operator = '+';
+            total= (num1+num2);
+            break;
+        case 1:
+            operator = '-';
+            total=(num1-num2);
+            break;
+        case 2:
+            operator = '*';
+            total=(num1*num2);
+            break;
+        case 3:
+            operator = '/';
+            total=(num1/num2);
+            break;
+    }
+    output_array4.push(num1 + operator + num2 + '=' + total);
+}
+console.log(output_array4);
+}
+
+combo_problem4(2, 5);
 
